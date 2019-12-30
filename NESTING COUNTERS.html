@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+</style>
+
+</head>
+<body>
+
+
+<h1>BAB 1</h1>
+<h2>Latar Belakang</h2>
+<h2>Rumusan Maslah</h2>
+
+<h1>BAB 2</h1>
+<h2>Sejarah Singkat</h2>
+<h2>Contoh</h2>
+
+<h1>BAB 3</h1>
+<h2>Kesimpulan</h2>
+<h2>Saran</h2>
+
+<p><b>Note:</b> Untuk menjadi yang terbaik, Kamu harus mempunyai mimpi yang besar serta semangat untuk mewujudkannya.</p>
+
+<h4><font color="green">By...fahmi alamsyah@2019</font></h4>
+
+</body>
+</html>

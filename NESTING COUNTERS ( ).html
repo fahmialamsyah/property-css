@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+</style>
+
+</head>
+<body>
+
+<ol>
+  <li>BAB 1</li>
+  <li>PENDAHULUAN
+  <ol>
+    <li>Latar Belakang</li>
+    <li>Rumusan Masalah</li>
+    <li>Tujuan
+    <ol>
+      <li>Sejarah Singkat</li>
+      <li>Rumusan</li>
+      <li>Tujuan</li>
+    </ol>
+    </li>
+    <li>Manfaat</li>
+  </ol>
+  </li>
+  <li>BAB 2</li>
+  <li>Pembahasan</li>
+</ol>
+
+<ol>
+  <li>Isi</li>
+  <li>Contoh</li>
+</ol>
+
+<p><b>Note:</b> Untuk menjadi yang terbaik, Kamu harus mempunyai mimpi yang besar serta semangat untuk mewujudkannya.</p>
+
+<h4><font color="green">By...fahmi alamsyah@2019</font></h4>
+
+</body>
+</html>
