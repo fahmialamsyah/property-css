@@ -12,8 +12,10 @@ div {
   float: right;
 }
 
-.clearfix {
-  overflow: auto;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .img2 {
@@ -24,9 +26,10 @@ div {
 </head>
 <body>
 
-<p>Hello Word!!!!!</p>
+<p>Hello Everybody</p>
 
 <div>
+  <h2>Without Clearfix</h2>
   <img class="img1" src="summer.jpg" alt="summer" width="170" height="170">
   Jangan pernah berhenti ketika kamu masih belum ingin menyerah.
 </div>
@@ -34,10 +37,11 @@ div {
 <p style="clear:right">Jangan pernah berhenti ketika kamu masih belum ingin menyerah.</p>
 
 <div class="clearfix">
+  <h2>With Clearfix</h2>
   <img class="img2" src="summer.jpg" alt="summer" width="170" height="170">
   Jangan pernah berhenti ketika kamu masih belum ingin menyerah.
 </div>
 
-<h4><font style="color: pink">By...fahmi alamsyah 2019</font></h4>
+<h4><font style="color: pink">By..fahmi alamsyah @2019</font></h4>
 </body>
 </html>
