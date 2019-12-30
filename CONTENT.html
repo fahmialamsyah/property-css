@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>CSS Website Layout</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>SEJARAH</h1>
+  <p>WELCOME EVERYBODY PLEASE YOUR ENJOY.</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.w3schools.com/css/css_website_layout.asp">MENU</a>
+  <a href="https://www.w3schools.com/css/css_website_layout.asp">HIBURAN</a>
+  <a href="https://www.w3schools.com/css/css_website_layout.asp">MEDIA</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>CSS</h2>
+    <p>CSS merupakan singkatan dari Cascading Style Sheets. Yaitu sebuah rangkaian instruksi yang dapat menentukan bagaimana suatu text itu dapat tertampil di halaman web. Perancangan desain text ini bisa dilakukan dengan mengartikan fonts (huruf) , margins (ukuran), colors (warna), latar belakang (background), ukuran font (font sizes) dan lain sebagainya. Elemen-elemen contohnya colors (warna) , fonts (huruf), sizes (ukuran) trus spacing (jarak) dapat disebut juga dengan “styles”.</p>
+  </div>
+  
+  <div class="column">
+    <h2>HTML</h2>
+    <p>LHTML adalah singkatan dari HyperText Markup Language yaitu bahasa pemrograman standar yang digunakan untuk membuat sebuah halaman web, yang kemudian dapat diakses untuk menampilkan berbagai informasi di dalam sebuah penjelajah web Internet (Browser). HTML dapat juga digunakan sebagai link link antara file-file dalam situs atau dalam komputer dengan menggunakan localhost, atau link yang menghubungkan antar situs dalam dunia internet.</p>
+  </div>
+  
+  <div class="column">
+    <h2>PHP</h2>
+    <p>PHP merupakan salah satu bahasa pemrograman yang paling banyak digunakan dalam internet, yang mana memungkinkan Anda untuk melakukan banyak hal dan lebih mudah daripada HTML. MySQL memungkinkan Anda untuk membuat dan merubah database pada server Anda. Dengan menggunakan keduanya, Anda akan bisa membuat situs dan database yang jauh lebih kompleks dan juga lebih baik. Mengerti apa itu PHP dan MySQL. PHP merupakan bahasa pemrograman yang dapat Anda gunakan untuk membuat skrip yang lebih interaktif. Skrip ini kemudian akan diolah dalam web server yang hasilnya dapat dilihat dalam bentuk HTML.</p>
+  </div>
+</div>
+
+<h4><font color="purple">fahmi alamsyah </font></h4>
+</body>
+</html>
